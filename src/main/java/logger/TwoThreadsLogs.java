@@ -31,7 +31,6 @@ public class TwoThreadsLogs {
             this.log = log;
             this.loopNum = loopNum;
         }
-
         @Override // override method from superclass
         public void run() {
             while (i <= 500) {
@@ -40,6 +39,7 @@ public class TwoThreadsLogs {
                 log.info("Loop " + this.loopNum + ", Write: " + i);
             }
         }
+
     }
 
 }
